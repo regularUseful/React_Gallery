@@ -4,17 +4,17 @@ import './Sidebar.css'
 
 class Sidebar extends React.Component{
     static defaultProps = {
-        filters: [ "Landscape","Portrait","Mountains","City","Animals"] 
+        filters: [ "Portrait","Mountains","City","Animals", 'River'] 
     }
     render(){
         return(
             <div className="Sidebar-container">
                 <h1>Photos</h1>
-                <ul>
+                <ol>
                     {this.props.filters.map(i=>{
-                        return <li value={i}>{i}</li>
+                        return <li onClick={this.props.onClick} id={i}>{i}</li>
                     })}
-                </ul>
+                </ol>
             </div>
         )
     }
