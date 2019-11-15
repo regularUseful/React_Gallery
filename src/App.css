@@ -5,4 +5,11 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+@media only screen and (max-width: 580px){
+  .App{
+    padding: 0 5px;
+    height: 100vh;
+  }
+}
+
 
