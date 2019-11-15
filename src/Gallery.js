@@ -53,7 +53,7 @@ class Gallery extends React.Component{
             <div>
                 <Sidebar onClick={this.imgFilter} />
                 <div className="Gallery-container">
-                    {this.props.photoObjectArray.filter(function(i){ if(filterVal !== ""){ return i.className === filterVal}else{return i
+                    {this.props.photoObjectArray.filter(function(i){ if(filterVal !== "All" && filterVal !== ""){ return i.className === filterVal}else{return i
 
                     } }).map(i=>{
                         console.log(i.className, filterVal)

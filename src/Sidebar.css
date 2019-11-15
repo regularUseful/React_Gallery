@@ -3,8 +3,46 @@
     width: 200px;
     height: 90%;
     padding: 20px;
-    color: white;
-    background: blue;
+    color: #ecf0f1;
     position: fixed;
     clear: both;
+    background: #111;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
+
+.Sidebar-heading{
+    margin: 30px 0 0 0;
+    align-self: center;
+    text-align: center;
+    font-family: 'Rock Salt', cursive;
+    line-height: 42px;
+    color: #e74c3c;
+    transform: rotate(-5deg);
+}
+
+.Sidebar-heading-1{
+    color: #e74c3c;
+    font-size: .7em;
+}
+
+.Sidebar-list{
+    list-style: none;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.Sidebar-list-item{
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-size: .7em;
+    letter-spacing: 3px;
+}
+
+.Sidebar-text{
+    font-size: .5em;
+    letter-spacing: 3px;
+    font-weight: 300;
+    font-style: italic;
 }
