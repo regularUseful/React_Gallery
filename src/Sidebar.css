@@ -1,0 +1,9 @@
+.Sidebar-container{
+    align-self: flex-start;
+    background: blue;
+    width: 15%;
+    height: 100%;
+    padding: 20px;
+    color: white;
+    position: fixed;
+}
