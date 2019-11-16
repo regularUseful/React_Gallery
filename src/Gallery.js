@@ -35,7 +35,8 @@ class Gallery extends React.Component{
         this.state = {
             filter: "",
             modal: false,
-            modalImg: ""
+            modalImg: "",
+            widnowWidth: 0
         }
         this.imgFilter = this.imgFilter.bind(this);
         this.modal = this.modal.bind(this);
@@ -79,6 +80,9 @@ class Gallery extends React.Component{
                 )
             }
         }
+        /*//////delete/////*/
+
+       /*///////////////////////*/
         return(
             <div>
                 <Sidebar onClick={this.imgFilter} />
