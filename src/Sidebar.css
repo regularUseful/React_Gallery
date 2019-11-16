@@ -38,6 +38,11 @@
     margin-bottom: 20px;
     font-size: .7em;
     letter-spacing: 3px;
+    transition: all .3s;
+}
+
+.Sidebar-list-item:hover{
+     color: #e74c3c;
 }
 
 .Sidebar-text{
@@ -77,6 +82,9 @@
         font-size: .5em;
         
     }
+
+   
+
 
     .Sidebar-text{
         display: none;
