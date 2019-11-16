@@ -1,14 +1,15 @@
 import React from 'react';
-import Sidebar from './Sidebar'
-import './Gallery.css'
+import Sidebar from './Sidebar';
+import './Gallery.css';
+const uuidv1 = require('uuid/v1');
 
 
 
 class Gallery extends React.Component{
     static defaultProps = {
         photoObjectArray: [
-            {className: "City" , src: "https://source.unsplash.com/900x1600/?new-york" },
-            {className: "Animals" , src: "https://source.unsplash.com/900x1600/?animal" },
+            {className: "City" , src: "https://source.unsplash.com/900x1600/?new-york"},
+            {className: "Animals" , src: "https://source.unsplash.com/900x1600/?animal"},
             {className: "Animals" , src: "https://source.unsplash.com/900x1600/?dog" },
             {className: "Animals" , src: "https://source.unsplash.com/900x1600/?monkey" },
             {className: "Portrait" , src: "https://source.unsplash.com/900x1600/?portrait" },
@@ -41,6 +42,9 @@ class Gallery extends React.Component{
         this.modal = this.modal.bind(this);
         this.closeModal = this.closeModal.bind(this);
     }
+    
+
+
 
     imgFilter(e){
         this.setState({
@@ -62,6 +66,7 @@ class Gallery extends React.Component{
         })
     }
 
+
   
     render(){
         let filterVal= this.state.filter;
@@ -82,20 +87,23 @@ class Gallery extends React.Component{
 
         return(
             <div>
+                
                 <Sidebar onClick={this.imgFilter} />
                 {modalCheck()}
                 <div className="Gallery-container">
                     {
                     this.props.photoObjectArray.filter(function(i){ 
                         if(filterVal !== "All" && filterVal !== ""){ 
-                            return i.className === filterVal}
+                            return i.className === filterVal
+                        }
                         else{
                             return i
-                    } }).map(i=>{
+                        } 
+                        }).map(i=>{
                         return(
-                            <div  onClick={this.modal} className="Gallery-Photo-container">
-                                <img src={i.src}  />
-                            </div>
+                                <div key={uuidv1()}  onClick={this.modal} className="Gallery-Photo-container">
+                                    <img src={i.src} />
+                                </div>
                         )
                     })}
                 </div>

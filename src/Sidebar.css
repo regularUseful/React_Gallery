@@ -20,6 +20,7 @@
     line-height: 42px;
     color: #e74c3c;
     transform: rotate(-5deg);
+    transition: all .5s;
 }
 
 .Sidebar-heading-1{
@@ -50,6 +51,16 @@
     letter-spacing: 3px;
     font-weight: 300;
     font-style: italic;
+}
+
+/*//////////transition group///////////////*/
+.rotate-appear{
+    transform: rotate(0deg);
+}
+
+.rotate-appear.rotate-appear-active{
+    transform: rotate(-8deg);
+    transition: all .5s;
 }
 
 
