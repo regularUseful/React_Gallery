@@ -23,7 +23,7 @@ class Gallery extends React.Component{
             {className: "City" , src: "https://source.unsplash.com/900x1600/?tower" },
             {className: "City" , src: "https://source.unsplash.com/900x1600/?skyscraper" },
             {className: "River" , src: "https://source.unsplash.com/900x1600/?flowing-river" },
-            {className: "Animals" , src: "https://source.unsplash.com/900x1600/?mt-fuji" },
+            {className: "Mountains" , src: "https://source.unsplash.com/900x1600/?mt-fuji" },
             {className: "Animals" , src: "https://source.unsplash.com/900x1600/?goat" },
             {className: "Portrait" , src: "https://source.unsplash.com/900x1600/?face" },
             {className: "Animals" , src: "https://source.unsplash.com/900x1600/?sheep" },
