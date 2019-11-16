@@ -36,7 +36,6 @@ class Gallery extends React.Component{
             filter: "",
             modal: false,
             modalImg: "",
-            widnowWidth: 0
         }
         this.imgFilter = this.imgFilter.bind(this);
         this.modal = this.modal.bind(this);
@@ -65,7 +64,7 @@ class Gallery extends React.Component{
 
   
     render(){
-        let filterVal = this.state.filter;
+        let filterVal= this.state.filter;
         let modal = this.state.modal;
         let modalUrl = this.state.modalImg;
         let closeModal = this.closeModal;
@@ -80,9 +79,7 @@ class Gallery extends React.Component{
                 )
             }
         }
-        /*//////delete/////*/
 
-       /*///////////////////////*/
         return(
             <div>
                 <Sidebar onClick={this.imgFilter} />
@@ -96,7 +93,7 @@ class Gallery extends React.Component{
                             return i
                     } }).map(i=>{
                         return(
-                            <div onClick={this.modal} className="Gallery-Photo-container">
+                            <div  onClick={this.modal} className="Gallery-Photo-container">
                                 <img src={i.src}  />
                             </div>
                         )

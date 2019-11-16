@@ -5,8 +5,16 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 10px;
+    transition: opacity .5s;
 }
 
+.fadeIN{
+    opacity: 1;
+}
+
+.fadeOut{
+    opacity: 0;
+}
 
 
 .Gallery-Photo-container{

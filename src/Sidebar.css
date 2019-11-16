@@ -126,4 +126,8 @@
         overflow: hidden;
         transition: height .5s;
     }
+
+    .fa-bars{
+        cursor: pointer;
+    }
 }
